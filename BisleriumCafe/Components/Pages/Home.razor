@@ -1,0 +1,32 @@
+﻿@page "/home"
+@using System.Globalization
+<div class="container text-center my-5">
+    <h1 class="display-4 mt-3">Welcome to BisleriumCafe</h1>
+    <p class="lead">Streamline your catering business with our intuitive Point of Sale (POS) software.</p>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h2>System Objectives</h2>
+            <ul class="list-unstyled">
+                <li class="mb-1">🚀 Amplify workplace efficiency.</li>
+                <li class="mb-1">💼 Simplify your order handling tasks.</li>
+                <li class="mb-1">📈 Empower your strategy with data-driven insights.</li>
+                <li class="mb-1">🛡️ Prioritize security and reliability.</li>
+            </ul>
+        </div>
+        <div class="col-md-6 text-center">
+            <h2>App Stats</h2>
+            <li>Orders Processed: <strong>Rs @_orderCount</strong></li>
+            <li>Revenue Generated: <strong>Rs @_revenueGenerated.ToString("N2", CultureInfo.CreateSpecificCulture("ne-NP"))</strong></li>
+            <li>Happy Customers: <strong>@_customerCount</strong></li>
+            <li>Today's Collection: <strong>Rs @_todayRevenueGenerated.ToString("N2", CultureInfo.CreateSpecificCulture("ne-NP"))</strong></li>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center my-5">
+    <h2>LET'S PROCEED FROM NOW</h2>
+    <p>Eager to modernize your café experience? Take the leap with our free trial or reach out to our sales team for a detailed discussion.</p>
+</div>
